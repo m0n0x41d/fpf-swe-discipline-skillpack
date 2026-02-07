@@ -6,21 +6,31 @@ Provides confidence tracking (L0/L1/L2), stage-aware decision calibration, weake
 
 ## Installation
 
-### As a Claude Code plugin
+### Plugin (global, persistent)
 
 ```bash
-/plugin install fpf-swe-discipline
+# Add the marketplace source
+claude plugin marketplace add m0n0x41d/fpf-swe-discipline-skillpack
+
+# Install the plugin
+claude plugin install fpf-swe-discipline@fpf-swe-discipline-skillpack
 ```
 
-This installs five skills as slash commands:
+This installs five skills that Claude invokes automatically based on context:
 
-| Command | Purpose |
-|---------|---------|
-| `/adi-reasoning` | Hypothesis-based reasoning for architecture and debugging |
-| `/confidence-scope` | Confidence level and scope marking for assertions |
-| `/wlnk-mono` | Weakest link and MONO analysis for reliability |
-| `/temporal-check` | Plan vs reality checks for debugging discrepancies |
-| `/bounded-context` | Term translation across service/domain boundaries |
+| Skill | Purpose |
+|-------|---------|
+| `adi-reasoning` | Hypothesis-based reasoning for architecture and debugging |
+| `confidence-scope` | Confidence level and scope marking for assertions |
+| `wlnk-mono` | Weakest link and MONO analysis for reliability |
+| `temporal-check` | Plan vs reality checks for debugging discrepancies |
+| `bounded-context` | Term translation across service/domain boundaries |
+
+### Plugin (local, single session)
+
+```bash
+claude --plugin-dir /path/to/fpf-swe-discipline-skillpack
+```
 
 ### CLAUDE.md (engineering standards)
 

@@ -1,0 +1,26 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "fpf-swe-discipline-skillpack",
+  "description": "SWE reasoning discipline built on Anatoly Levenchuk's First Principles Framework. Skills for hypothesis-based reasoning, confidence tracking, weakest-link analysis, and more.",
+  "owner": {
+    "name": "Ivan Zakutnii",
+    "email": "m0n0x41d@github.com"
+  },
+  "plugins": [
+    {
+      "name": "fpf-swe-discipline",
+      "description": "SWE reasoning discipline built on Anatoly Levenchuk's First Principles Framework (github.com/ailev/FPF). Includes hypothesis-based reasoning, confidence/scope tracking, weakest-link analysis, plan-vs-reality checks, and bounded context translation.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Ivan Zakutnii",
+        "email": "m0n0x41d@github.com"
+      },
+      "source": {
+        "source": "url",
+        "url": "https://github.com/m0n0x41d/fpf-swe-discipline-skillpack.git"
+      },
+      "category": "development",
+      "homepage": "https://github.com/m0n0x41d/fpf-swe-discipline-skillpack"
+    }
+  ]
+}
