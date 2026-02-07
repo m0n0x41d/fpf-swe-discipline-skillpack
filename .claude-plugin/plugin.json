@@ -1,0 +1,5 @@
+{
+  "name": "fpf-swe-discipline",
+  "description": "SWE reasoning discipline built on Anatoly Levenchuk's First Principles Framework (github.com/ailev/FPF). Includes hypothesis-based reasoning, confidence/scope tracking, weakest-link analysis, plan-vs-reality checks, and bounded context translation.",
+  "version": "1.0.0"
+}
